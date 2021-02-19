@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Report Lost Item</title>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <style type="text/css">
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+
+    img {
+      opacity: 1;
+      position: absolute;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 3%
+    }
+
+    .imgbtn {
+      display: inline-block;
+      position: relative;
+    }
+
+    .imgbtn button {
+      border: none;
+      background-color: white;
+      opacity: 0.8;
+      color: black;
+      transition: .3s;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .imgbtn:hover button {
+      background-color: #CFB997;
+    }
+
+    .imgbtn div {
+      background-color: #dfdfdf;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      visibility: hidden;
+      position: absolute;
+      min-width: 100%;
+      opacity: 0;
+      transition: .3s;
+    }
+
+
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    /* === */
+
+    .blocks {
+      margin-top: 70px;
+
+    }
+
+    #left {
+      float: left;
+    }
+
+    #right {
+      float: right;
+    }
+
+    .picblock {
+      background-image: url('Untitled-3-Recovered.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+  </style>
+
+</head>
+
+<body class="picblock">
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Lost Items 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="lostb.php">Books</a>
+              <a href="lostelec.php">Electronics</a>
+              <a href="lostid.php">Identity</a>
+              <a href="lostper.php">Personal Accessories</a>
+            </div>
+        </div> 
+          <div class="dropdown">
+          <button class="dropbtn">Found Items 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+              <a href="foundb.php">Books</a>
+              <a href="foundelec.php">Electronics</a>
+              <a href="foundid.php">Identity</a>
+              <a href="foundpers.php">Personal Accessories</a>
+          </div>
+        </div> 
+        <a href="AboutUsF.htm">About Us</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdL6TlouqrcGyJCKHCGtUSUMmXYJL8xmKHXxHZe7jJn_x4BaQ/viewform?usp=sf_link">Enquiry</a>
+  
+      </div>
+      
+
+  <!-- <nav>
+    <div class="navbar">
+      <a href="test-2.html">Home</a>
+      <div class="dropdownav">
+        <a href="#">Lost Items</a>
+          <div class="dropdown-content">
+            <a href="lostb.php">Books</a>
+            <a href="lostelec.php">Electronics</a>
+            <a href="lostid.php">Identity</a>
+            <a href="lostper.php">Personal Accessories</a>
+          </div>
+
+      </div>
+      <div class="dropdownav">
+        <a href="#">Found Items</a>
+          <ul class="dropdown-content">
+            <a href="foundb.php">Books</a>
+            <a href="foundelec.php">Electronics</a>
+            <a href="foundid.php">Identity</a>
+            <a href="foundpers.php">Personal Accessories</a>
+          </ul>
+        
+      </div>
+      <a href="AboutUsF.htm">About Us</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdL6TlouqrcGyJCKHCGtUSUMmXYJL8xmKHXxHZe7jJn_x4BaQ/viewform?usp=sf_link">Enquiry</a>
+
+    </div>
+
+  </nav> -->
+
+
+  <div class="blocks">
+    <center>
+      <div id="left" class="imgbtn">
+        <a href="bookslost.php"><button style="padding: 50px 110px;" "margin-top: 20px;"><b>BOOKS<b></button></a>
+      </div>
+    </center>
+    <div class="blocks">
+      <center>
+        <div id="right" class="imgbtn">
+          <a href="electronicslost.php"><button style="padding: 50px 80px;"><b>ELECTRONICS<b></button></a>
+        </div>
+      </center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="blocks">
+        <center>
+          <div id="left" class="imgbtn">
+            <a href="identitylost1.php"><button style="padding: 50px 70px;"><b>IDENTITY PROOF<b></button></a>
+          </div>
+        </center>
+        <div class="blocks">
+          <center>
+            <div id="right" class="imgbtn">
+              <a href="personallost1.php"><button style="padding: 50px 30px;"><b>PERSONAL ACCESSORIES<b></button></a>
+            </div>
+          </center>
+
+        </div>
+</body>
+
+</html>
